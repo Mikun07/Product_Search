@@ -70,8 +70,8 @@ function App() {
     const mostExpensiveProduct = sortedProducts[sortedProducts.length - 1];
     const savings = mostExpensiveProduct.price - cheapestProduct.price;
 
-    setCheapestProduct(cheapestProduct); // Assuming you have a state for cheapestProduct
-    setSavings(savings); // Assuming you have a state for savings
+    setCheapestProduct(cheapestProduct);
+    setSavings(savings);
     setShowComparisonModal(true);
   };
 
@@ -132,6 +132,8 @@ function App() {
           onClose={handleCloseComparisonModal}
           cheapestProduct={cheapestProduct}
           savings={savings}
+          selectedProducts={selectedProducts}
+          ProductData={ProductData}
         />
       )}
       <Toaster />
