@@ -1,6 +1,7 @@
 {
     "products": [
       {
+        "id": 1,
         "name": "Organic Quinoa",
         "description": "Our premium organic quinoa is sourced from the Andes Mountains, providing a rich and nutty flavor with a delicate texture. Packed with protein, fiber, and essential nutrients, it's perfect for salads, stir-fries, and pilafs. Add a nutritious boost to your meals with our versatile quinoa.",
         "price": 7.99,
@@ -11,6 +12,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 2,
         "name": "Columbia Medium Roast Coffee Beans",
         "description": "Indulge in the rich aroma and smooth taste of our Columbia Medium Roast Coffee Beans. Sourced from the high-altitude regions of Columbia, these beans are expertly roasted to perfection, delivering a balanced flavor profile with hints of caramel and chocolate. Start your day right with a cup of our premium coffee.",
         "price": 12.49,
@@ -21,6 +23,7 @@
         "discountPercentage": 10
       },
       {
+        "id": 3,
         "name": "Stainless Steel Insulated Water Bottle",
         "description": "Stay hydrated on the go with our sleek and durable stainless steel insulated water bottle. Double-walled vacuum insulation keeps your drinks hot for 12 hours and cold for 24 hours. The leak-proof design and wide mouth make it easy to fill and clean. Whether you're hiking, at the gym, or commuting, this bottle is your perfect companion.",
         "price": 19.99,
@@ -31,6 +34,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 4,
         "name": "Bluetooth Wireless Earbuds",
         "description": "Experience true freedom with our Bluetooth wireless earbuds. Ergonomically designed for comfort and stability, these earbuds deliver high-quality sound with deep bass and clear treble. With touch controls and a portable charging case, you can enjoy music and take calls on the go. Say goodbye to tangled wires and hello to hassle-free listening.",
         "price": 49.99,
@@ -41,6 +45,7 @@
         "discountPercentage": 15
       },
       {
+        "id": 5,
         "name": "Nintendo Switch",
         "description": "Immerse yourself in the world of gaming with the Nintendo Switch. Play anytime, anywhere, with the versatility of a handheld console and a home gaming system. With its innovative Joy-Con controllers and wide selection of games, the Nintendo Switch offers endless entertainment for players of all ages.",
         "price": 299.99,
@@ -51,6 +56,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 6,
         "name": "Apple MacBook Pro",
         "description": "Experience unparalleled performance with the Apple MacBook Pro. Featuring a stunning Retina display, powerful Intel processors, and up to 16GB of RAM, it's the ultimate tool for creative professionals and power users. With all-day battery life and macOS, you can work, create, and innovate wherever you go.",
         "price": 1499.99,
@@ -61,6 +67,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 7,
         "name": "Sony PlayStation 5",
         "description": "Experience the next generation of gaming with the Sony PlayStation 5. Featuring lightning-fast load times, immersive 3D audio, and stunning 4K graphics, it delivers unparalleled gaming experiences. With an innovative DualSense controller and a library of exclusive titles, the PS5 takes gaming to new heights.",
         "price": 499.99,
@@ -71,6 +78,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 8,
         "name": "Portable Outdoor Camping Tent",
         "description": "Explore the great outdoors with our portable camping tent. Made from durable materials and featuring waterproof construction, it provides reliable shelter in any weather. With easy setup and compact storage, this tent is perfect for camping, hiking, and outdoor adventures.",
         "price": 79.99,
@@ -81,6 +89,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 9,
         "name": "Nike Air Zoom Pegasus Running Shoes",
         "description": "Reach new speeds with Nike Air Zoom Pegasus running shoes. Featuring responsive Zoom Air cushioning and a lightweight mesh upper, they provide comfort and support mile after mile. With a sleek design and durable rubber outsole, these shoes are perfect for runners of all levels.",
         "price": 119.99,
@@ -91,6 +100,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 10,
         "name": "Smart WiFi Light Bulb",
         "description": "Transform your home with our smart WiFi light bulb. Compatible with voice assistants and mobile apps, you can control brightness, color, and scheduling from anywhere. Set the mood for any occasion with millions of color options and customize your lighting experience with ease.",
         "price": 14.99,
@@ -101,6 +111,7 @@
         "discountPercentage": 20
       },
       {
+        "id": 11,
         "name": "JBL Flip 5 Waterproof Portable Speaker",
         "description": "Take your music anywhere with the JBL Flip 5 waterproof portable speaker. With its rugged design and IPX7 waterproof rating, it's perfect for beach days, pool parties, and outdoor adventures. Featuring powerful sound and 12 hours of battery life, the Flip 5 ensures the party never stops.",
         "price": 89.99,
@@ -111,6 +122,7 @@
         "discountPercentage": 5
       },
       {
+        "id": 12,
         "name": "Canon EOS Rebel T7 DSLR Camera",
         "description": "Capture unforgettable moments with the Canon EOS Rebel T7 DSLR camera. Featuring a 24.1-megapixel sensor and DIGIC 4+ image processor, it delivers stunning photos and Full HD videos with ease. With built-in WiFi and NFC, you can share your creations instantly and explore the world of photography like never before.",
         "price": 499.99,
@@ -121,6 +133,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 13,
         "name": "FIFA 22 - PlayStation 4",
         "description": "Experience the thrill of soccer like never before with FIFA 22 for PlayStation 4. Featuring realistic gameplay and stunning graphics, it brings the excitement of the beautiful game to life. With new features like HyperMotion technology and Career Mode enhancements, FIFA 22 offers endless hours of entertainment for soccer fans.",
         "price": 59.99,
@@ -131,6 +144,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 14,
         "name": "The Legend of Zelda: Breath of the Wild - Nintendo Switch",
         "description": "Embark on an epic adventure in the open-world masterpiece, The Legend of Zelda: Breath of the Wild for Nintendo Switch. Explore a vast kingdom filled with breathtaking landscapes, ancient ruins, and challenging puzzles. With endless possibilities and surprises around every corner, it's a journey you'll never forget.",
         "price": 59.99,
@@ -141,6 +155,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 15,
         "name": "Leather Messenger Bag",
         "description": "Stay organized and stylish with our leather messenger bag. Crafted from genuine leather with antique brass hardware, it's the perfect blend of form and function. With multiple compartments and a padded laptop sleeve, it's ideal for work, travel, and everyday use.",
         "price": 79.99,
@@ -151,6 +166,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 16,
         "name": "Fitbit Charge 5 Fitness Tracker",
         "description": "Track your fitness goals and monitor your health with the Fitbit Charge 5 fitness tracker. With advanced sensors and built-in GPS, it provides real-time stats and insights for workouts, sleep, and stress management. Stay connected with call, text, and app notifications, and reach your full potential with Fitbit Premium.",
         "price": 179.99,
@@ -161,6 +177,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 17,
         "name": "Gourmet Chocolate Truffles",
         "description": "Indulge in decadent luxury with our gourmet chocolate truffles. Handcrafted from the finest Belgian chocolate and infused with luscious flavors like raspberry, caramel, and hazelnut, each truffle is a taste sensation. Whether as a gift or a personal treat, our truffles are sure to delight the senses and satisfy the soul.",
         "price": 24.99,
@@ -171,6 +188,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 18,
         "name": "Samsung Galaxy Watch 4",
         "description": "Stay connected and stylish with the Samsung Galaxy Watch 4. Featuring advanced health tracking, GPS navigation, and customizable watch faces, it's the perfect companion for an active lifestyle. With seamless integration with your favorite apps and services, the Galaxy Watch 4 helps you stay on top of your day.",
         "price": 249.99,
@@ -181,6 +199,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 19,
         "name": "Lemon Lime Soda",
         "description": "Quench your thirst with our refreshing lemon lime soda. Made with real citrus extracts and natural flavors, it's a crisp and tangy drink that's perfect for any occasion. Enjoy it chilled on a hot summer day or mix it with your favorite spirits for a zesty cocktail.",
         "price": 2.49,
@@ -191,6 +210,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 20,
         "name": "Tropical Fruit Smoothie Mix",
         "description": "Escape to a tropical paradise with our exotic fruit smoothie mix. Bursting with the flavors of mango, pineapple, and passionfruit, it's a delicious and nutritious blend that's perfect for breakfast or as a refreshing snack. Just add your favorite liquid and blend for a taste of the tropics.",
         "price": 5.99,
@@ -201,6 +221,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 21,
         "name": "Spicy Jalapeno Chips",
         "description": "Add some heat to snack time with our spicy jalapeno chips. Made with real jalapeno peppers and a hint of lime, they're a bold and flavorful treat that's perfect for spice lovers. Whether you're watching the game or enjoying a movie night, our chips will satisfy your cravings.",
         "price": 3.99,
@@ -211,6 +232,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 22,
         "name": "Hawaiian BBQ Sauce",
         "description": "Transport your taste buds to the islands with our Hawaiian BBQ sauce. Made with authentic ingredients like pineapple, soy sauce, and ginger, it's a sweet and tangy sauce that's perfect for grilling, dipping, or marinating. Add a taste of aloha to your next meal with our delicious BBQ sauce.",
         "price": 4.99,
@@ -221,6 +243,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 23,
         "name": "PlayStation 4 DualShock Wireless Controller",
         "description": "Enhance your gaming experience with the PlayStation 4 DualShock wireless controller. Featuring improved ergonomics and responsive controls, it offers precision and comfort for hours of gameplay. With built-in motion sensors and a touchpad, it opens up new possibilities for immersive gaming.",
         "price": 59.99,
@@ -231,6 +254,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 24,
         "name": "Nintendo Switch Pro Controller",
         "description": "Take your gaming to the next level with the Nintendo Switch Pro Controller. Featuring a comfortable grip, responsive buttons, and motion controls, it offers precision and versatility for any game. With a rechargeable battery and wireless connectivity, it's the perfect accessory for serious gamers.",
         "price": 69.99,
@@ -241,6 +265,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 25,
         "name": "Wireless Charging Pad",
         "description": "Charge your devices quickly and wirelessly with our charging pad. Compatible with Qi-enabled smartphones and other devices, it delivers fast and efficient charging without the need for cables. With a sleek and compact design, it's the perfect addition to your home or office.",
         "price": 29.99,
@@ -251,6 +276,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 26,
         "name": "Cotton Canvas Tote Bag",
         "description": "Carry your essentials in style with our cotton canvas tote bag. Made from durable canvas with reinforced stitching, it's perfect for groceries, beach trips, and everyday use. With a spacious interior and comfortable handles, it's a practical and eco-friendly alternative to plastic bags.",
         "price": 14.99,
@@ -261,6 +287,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 27,
         "name": "Wireless Noise-Canceling Headphones",
         "description": "Immerse yourself in music with our wireless noise-canceling headphones. Featuring advanced ANC technology, they block out external noise for a truly immersive listening experience. With Bluetooth connectivity and long-lasting battery life, you can enjoy your favorite music anytime, anywhere.",
         "price": 129.99,
@@ -271,6 +298,7 @@
         "discountPercentage": 10
       },
       {
+        "id": 28,
         "name": "Raspberry Pi 4 Model B",
         "description": "Explore the world of computing with the Raspberry Pi 4 Model B. Featuring a powerful quad-core processor, dual 4K display support, and up to 8GB of RAM, it's perfect for DIY projects, coding, and learning about technology. With endless possibilities and a vibrant community, the Raspberry Pi 4 is your gateway to innovation.",
         "price": 35.00,
@@ -281,6 +309,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 29,
         "name": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
         "description": "Simplify mealtime with the Instant Pot Duo 7-in-1 electric pressure cooker. With seven functions including pressure cooker, slow cooker, rice cooker, and steamer, it's a versatile kitchen appliance that can do it all. With programmable settings and a large capacity, it's perfect for busy families and aspiring chefs.",
         "price": 99.95,
@@ -291,6 +320,7 @@
         "discountPercentage": 0
       },
       {
+        "id": 30,
         "name": "Amazon Echo Dot (4th Gen)",
         "description": "Bring the power of Alexa into your home with the Amazon Echo Dot (4th Gen). With its sleek design and improved sound quality, it's the perfect smart speaker for any room. Control your smart home devices, play music, set alarms, and more with just your voice.",
         "price": 49.99,

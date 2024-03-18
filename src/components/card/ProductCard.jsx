@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { AiOutlinePlus, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import {
+  AiOutlineCheck,
+  AiOutlineClose,
+  AiOutlineHeart,
+  AiFillHeart,
+} from "react-icons/ai";
 
-const ProductCard = ({ product, onProductClick, }) => {
+const ProductCard = ({
+  product,
+  onProductClick,
+  onToggleSelect,
+  isSelected,
+}) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const addToCart = () => toast.success("Added to cart");
   const addToFavorite = () => {
     setIsFavorite(true);
     toast.success("Added to favorites");
@@ -57,11 +66,15 @@ const ProductCard = ({ product, onProductClick, }) => {
               <span>&#36;</span> <span>{product.price}</span>
             </p>
             <button
-              onClick={addToCart}
+              onClick={onToggleSelect}
               className="h-[35px] w-[35px] flex justify-center items-center rounded-full border-2 border-gray-400"
-              aria-label="Add to cart"
+              aria-label="Toggle select"
             >
-              <AiOutlinePlus size={20} />
+              {isSelected ? (
+                <AiOutlineClose size={25} color="red" />
+              ) : (
+                <AiOutlineCheck size={25} color="green" />
+              )}
             </button>
           </div>
         </div>
