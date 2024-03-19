@@ -44,10 +44,20 @@ describe("Product Search", () => {
   });
 
   it("should have a responsive design", () => {
-    cy.viewport(320, 480);
+    // iPhone 14, 13, 12, 11
+    cy.viewport(375, 812);
     cy.get("[data-testid=product-card]").should("be.visible");
 
-    cy.viewport(1024, 768);
+    // iPhone X
+    cy.viewport(375, 812);
+    cy.get("[data-testid=product-card]").should("be.visible");
+
+    // iPhone 8
+    cy.viewport(375, 667);
+    cy.get("[data-testid=product-card]").should("be.visible");
+
+    // iPhone 6
+    cy.viewport(375, 667);
     cy.get("[data-testid=product-card]").should("be.visible");
   });
 });

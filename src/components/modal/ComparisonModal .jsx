@@ -3,7 +3,6 @@ import React from "react";
 const ComparisonModal = ({
   onClose,
   cheapestProduct,
-  savings,
   selectedProducts,
   ProductData,
 }) => {
@@ -20,20 +19,6 @@ const ComparisonModal = ({
     });
     return groupedProducts;
   };
-
-  const renderProductDetails = (category, products) => (
-    <div key={category}>
-      <h3 className="text-lg font-semibold mb-2">{category}</h3>
-      <ul className="mb-4">
-        {products.map((product) => (
-          <li key={product.id} className="flex justify-between">
-            <span>{product.name}</span>
-            <span>${product.price}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
 
   const totalSavings = selectedProducts.reduce((acc, productId) => {
     const product = ProductData.products.find((p) => p.id === productId);

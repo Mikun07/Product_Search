@@ -1,4 +1,3 @@
-// ProductCard.js
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import {
@@ -15,7 +14,7 @@ const ProductCard = ({
   isSelected,
 }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const [buttonColor, setButtonColor] = useState("green"); // Initialize button color
+  const [buttonColor, setButtonColor] = useState("green");
 
   const addToFavorite = () => {
     setIsFavorite(true);
@@ -35,15 +34,15 @@ const ProductCard = ({
   };
 
   const toggleSelect = () => {
-    onToggleSelect(); // Trigger select/deselect action
-    setButtonColor((prevColor) => (prevColor === "green" ? "red" : "green")); // Toggle button color
+    onToggleSelect(); 
+    setButtonColor((prevColor) => (prevColor === "green" ? "red" : "green")); 
   };
 
   return (
     <>
       <div
-        className="h-52 bg-gray-100 lg:w-48 md:w-44 w-44 rounded-lg shadow-sm shadow-gray-400 flex flex-col justify-between"
-        data-category={product.category} data-testid="product-card" // Add data-category attribute
+        className="h-52 bg-gray-100 lg:w-48 md:w-44 w-40 rounded-lg shadow-sm shadow-gray-400 flex flex-col justify-between"
+        data-category={product.category} data-testid="product-card" 
       >
         <div onClick={onProductClick} className="relative cursor-pointer">
           <img
@@ -58,7 +57,7 @@ const ProductCard = ({
             aria-label={
               isFavorite ? "Remove from favorites" : "Add to favorites"
             }
-            data-testid="favorite-button" // Add data-testid attribute
+            data-testid="favorite-button" 
           >
             {isFavorite ? (
               <AiFillHeart size={20} color="red" />
@@ -77,11 +76,11 @@ const ProductCard = ({
               <span>&#36;</span> <span>{product.price}</span>
             </p>
             <button
-              onClick={toggleSelect} // Change to toggleSelect function
+              onClick={toggleSelect} 
               className="h-[35px] w-[35px] flex justify-center items-center rounded-full border-2 border-gray-400"
               aria-label="Toggle select"
-              data-testid="toggle-select-button" // Add data-testid attribute
-              style={{ color: buttonColor }} // Set button color dynamically
+              data-testid="toggle-select-button" 
+              style={{ color: buttonColor }} 
             >
               {isSelected ? (
                 <AiOutlineClose size={25} />

@@ -84,11 +84,11 @@ function App() {
       <div className="w-full h-screen p-4 overflow-hidden">
         <Header />
         <div className="mt-6 w-full h-screen overflow-y-auto custom__scrollbar">
-          <div className="w-full flex justify-between items-center px-2 sticky top-0 bg-white z-20">
+          <div className="w-full h-14 flex justify-between items-center px-2 sticky top-0 bg-white z-20">
             <h1 className="font-bold text-lg">Product</h1>
             <SearchBar handleSearch={handleSearch} />
           </div>
-          <div className="pt-5 pb-28 lg:pl-10 grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
+          <div className="pt-5 pb-28 grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
             {activeSearch.length === 0
               ? ProductData?.products?.map((product, index) => (
                   <ProductCard
@@ -132,7 +132,6 @@ function App() {
         <ComparisonModal
           onClose={handleCloseComparisonModal}
           cheapestProduct={cheapestProduct}
-          savings={savings}
           selectedProducts={selectedProducts}
           ProductData={ProductData}
         />
