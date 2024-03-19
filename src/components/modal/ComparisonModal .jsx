@@ -43,11 +43,15 @@ const ComparisonModal = ({
   const roundedTotalSavings = totalSavings.toFixed(2);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50" data-testid="comparison-modal">
       <div className="bg-white h-[500px] custom__scrollbar overflow-y-auto mx-2 p-4 md:p-8 rounded-lg shadow-xl lg:w-[600px] w-full">
-        <h2 className="text-xl md:text-2xl font-bold mb-4">
+        <h2
+          className="text-xl md:text-2xl font-bold mb-4"
+          data-testid="comparison-modal-title"
+        >
           Comparison Result
         </h2>
+
         <div className="mb-4">
           {Object.entries(groupProductsByCategory()).map(
             ([category, products]) => (
