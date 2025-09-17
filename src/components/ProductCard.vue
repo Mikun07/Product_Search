@@ -13,10 +13,13 @@
         :alt="product.name"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         loading="lazy"
-      />
+      >
       <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
 
-      <span v-if="product.discountPercentage > 0" class="absolute top-2.5 left-2.5 bg-brand text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">
+      <span
+        v-if="product.discountPercentage > 0"
+        class="absolute top-2.5 left-2.5 bg-brand text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow"
+      >
         -{{ product.discountPercentage }}% {{ ui.t('off') }}
       </span>
 
@@ -35,7 +38,9 @@
         :class="isSelected ? 'border-brand bg-brand text-white shadow-lg' : 'border-white/70 bg-white/60 text-gray-500 hover:border-brand hover:text-brand'"
         data-testid="toggle-select-button"
         @click.prevent="$emit('toggle-select')"
-      >✓</button>
+      >
+        ✓
+      </button>
 
       <span class="absolute bottom-2.5 right-2.5 text-[9px] font-bold uppercase tracking-wider bg-black/40 text-white backdrop-blur-sm px-2 py-0.5 rounded-full">
         {{ product.category }}
@@ -44,8 +49,12 @@
 
     <!-- Info -->
     <div class="flex flex-col flex-1 p-3.5 gap-2">
-      <p class="text-[10px] font-semibold text-brand uppercase tracking-wider">{{ product.brand }}</p>
-      <p class="font-semibold text-sm text-obsidian dark:text-white leading-snug line-clamp-2 min-h-[2.5rem]">{{ product.name }}</p>
+      <p class="text-[10px] font-semibold text-brand uppercase tracking-wider">
+        {{ product.brand }}
+      </p>
+      <p class="font-semibold text-sm text-obsidian dark:text-white leading-snug line-clamp-2 min-h-[2.5rem]">
+        {{ product.name }}
+      </p>
       <div class="flex items-center gap-1">
         <span style="color:#f59e0b">★</span>
         <span class="text-xs font-semibold text-gray-600 dark:text-gray-400">{{ product.rating }}</span>
@@ -53,13 +62,18 @@
       <div class="flex items-center justify-between mt-auto pt-1 border-t border-gray-50 dark:border-obsidian-3">
         <div class="flex flex-col">
           <span class="font-bold text-brand text-sm">{{ ui.format(effectivePrice ?? product.price) }}</span>
-          <span v-if="effectivePrice" class="text-[11px] text-gray-400 line-through leading-none">{{ ui.format(product.price) }}</span>
+          <span
+            v-if="effectivePrice"
+            class="text-[11px] text-gray-400 line-through leading-none"
+          >{{ ui.format(product.price) }}</span>
         </div>
         <button
           :aria-label="ui.t('addToCart')"
           class="h-8 w-8 flex items-center justify-center rounded-xl bg-brand hover:bg-brand-dark text-white shadow-sm shadow-brand/30 transition-colors"
           @click.prevent="handleAddToCart"
-        >🛒</button>
+        >
+          🛒
+        </button>
       </div>
     </div>
   </RouterLink>

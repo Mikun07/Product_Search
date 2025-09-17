@@ -12,18 +12,34 @@
           <SearchBar v-model="search" />
         </div>
       </div>
-      <CategoryFilter :active="category" @select="onSelectCategory" />
+      <CategoryFilter
+        :active="category"
+        @select="onSelectCategory"
+      />
     </div>
 
     <!-- Scrollable grid -->
-    <div id="catalog-grid" class="flex-1 overflow-y-auto custom__scrollbar px-4 relative">
+    <div
+      id="catalog-grid"
+      class="flex-1 overflow-y-auto custom__scrollbar px-4 relative"
+    >
       <!-- Watermark -->
-      <div class="pointer-events-none fixed inset-0 flex flex-col items-center justify-center z-0 select-none" aria-hidden="true">
-        <img src="/mikun-logo.svg" alt="" class="w-64 h-64 opacity-[0.04] dark:opacity-[0.06]" />
+      <div
+        class="pointer-events-none fixed inset-0 flex flex-col items-center justify-center z-0 select-none"
+        aria-hidden="true"
+      >
+        <img
+          src="/mikun-logo.svg"
+          alt=""
+          class="w-64 h-64 opacity-[0.04] dark:opacity-[0.06]"
+        >
         <span class="text-6xl font-black tracking-tight opacity-[0.04] dark:opacity-[0.06] text-obsidian dark:text-white -mt-4">MikunStore</span>
       </div>
 
-      <div v-if="displayList.length === 0" class="flex items-center justify-center h-48 text-gray-400 dark:text-gray-500 text-sm">
+      <div
+        v-if="displayList.length === 0"
+        class="flex items-center justify-center h-48 text-gray-400 dark:text-gray-500 text-sm"
+      >
         {{ ui.t('noResults') }}
       </div>
 
@@ -39,40 +55,63 @@
         </div>
 
         <!-- Pagination -->
-        <div v-if="totalPages > 1" class="flex items-center justify-center gap-2 py-8">
+        <div
+          v-if="totalPages > 1"
+          class="flex items-center justify-center gap-2 py-8"
+        >
           <button
             :disabled="safePage === 1"
             class="h-9 w-9 flex items-center justify-center rounded-xl border border-gray-200 dark:border-obsidian-3 text-gray-500 dark:text-gray-400 disabled:opacity-30 hover:border-brand hover:text-brand transition-colors"
             @click="goToPage(safePage - 1)"
-          >‹</button>
+          >
+            ‹
+          </button>
 
-          <template v-for="p in totalPages" :key="p">
-            <span v-if="p === safePage - 2 && safePage > 3" class="text-gray-400 text-sm px-1 select-none">…</span>
+          <template
+            v-for="p in totalPages"
+            :key="p"
+          >
+            <span
+              v-if="p === safePage - 2 && safePage > 3"
+              class="text-gray-400 text-sm px-1 select-none"
+            >…</span>
             <button
               v-if="p === 1 || p === totalPages || Math.abs(p - safePage) <= 1"
               class="h-9 min-w-[36px] px-2 flex items-center justify-center rounded-xl text-sm font-semibold transition-colors"
               :class="p === safePage ? 'bg-brand text-white shadow-sm shadow-brand/30' : 'border border-gray-200 dark:border-obsidian-3 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand'"
               @click="goToPage(p)"
-            >{{ p }}</button>
-            <span v-if="p === safePage + 2 && safePage < totalPages - 2" class="text-gray-400 text-sm px-1 select-none">…</span>
+            >
+              {{ p }}
+            </button>
+            <span
+              v-if="p === safePage + 2 && safePage < totalPages - 2"
+              class="text-gray-400 text-sm px-1 select-none"
+            >…</span>
           </template>
 
           <button
             :disabled="safePage === totalPages"
             class="h-9 w-9 flex items-center justify-center rounded-xl border border-gray-200 dark:border-obsidian-3 text-gray-500 dark:text-gray-400 disabled:opacity-30 hover:border-brand hover:text-brand transition-colors"
             @click="goToPage(safePage + 1)"
-          >›</button>
+          >
+            ›
+          </button>
         </div>
       </template>
     </div>
 
     <!-- Floating compare button -->
-    <div v-if="selectedIds.length >= 2" class="fixed bottom-6 right-6 z-40">
+    <div
+      v-if="selectedIds.length >= 2"
+      class="fixed bottom-6 right-6 z-40"
+    >
       <button
         class="flex items-center gap-2 bg-brand hover:bg-brand-dark text-white px-5 py-2.5 rounded-xl shadow-lg font-semibold text-sm transition-colors"
         data-testid="compare-selected-button"
         @click="handleCompare"
-      >{{ ui.t('compare') }} ({{ selectedIds.length }})</button>
+      >
+        {{ ui.t('compare') }} ({{ selectedIds.length }})
+      </button>
     </div>
 
     <!-- Comparison modal -->

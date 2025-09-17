@@ -12,7 +12,7 @@
       data-testid="search-input"
       class="bg-transparent outline-none text-sm flex-1 text-obsidian dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500"
       @input="$emit('update:modelValue', $event.target.value)"
-    />
+    >
   </div>
 </template>
 

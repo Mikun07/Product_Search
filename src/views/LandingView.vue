@@ -1,11 +1,10 @@
 <template>
   <div class="overflow-y-auto custom__scrollbar h-full">
-
     <!-- Hero -->
     <section class="relative overflow-hidden bg-gradient-to-br from-brand/10 via-white to-blue-50 dark:from-brand/20 dark:via-obsidian dark:to-obsidian-2 px-6 py-20 lg:py-32 flex flex-col items-center text-center gap-6">
       <div class="absolute inset-0 pointer-events-none overflow-hidden">
-        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brand/10 rounded-full blur-3xl"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand/10 rounded-full blur-3xl" />
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brand/10 rounded-full blur-3xl" />
       </div>
 
       <span class="relative z-10 inline-flex items-center gap-2 bg-brand/10 dark:bg-brand/20 text-brand font-semibold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest">
@@ -37,17 +36,28 @@
       </div>
 
       <div class="relative z-10 flex items-center gap-8 mt-6 text-center">
-        <div v-for="stat in stats" :key="stat.label">
-          <p class="text-2xl font-extrabold text-obsidian dark:text-white">{{ stat.value }}</p>
-          <p class="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{{ stat.label }}</p>
+        <div
+          v-for="stat in stats"
+          :key="stat.label"
+        >
+          <p class="text-2xl font-extrabold text-obsidian dark:text-white">
+            {{ stat.value }}
+          </p>
+          <p class="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
+            {{ stat.label }}
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Categories -->
     <section class="px-6 lg:px-16 py-14 bg-white dark:bg-obsidian-2">
-      <h2 class="text-xl font-bold text-obsidian dark:text-white mb-2">{{ ui.t('landingCategoriesTitle') }}</h2>
-      <p class="text-sm text-gray-400 dark:text-gray-500 mb-8">{{ ui.t('landingCategoriesSub') }}</p>
+      <h2 class="text-xl font-bold text-obsidian dark:text-white mb-2">
+        {{ ui.t('landingCategoriesTitle') }}
+      </h2>
+      <p class="text-sm text-gray-400 dark:text-gray-500 mb-8">
+        {{ ui.t('landingCategoriesSub') }}
+      </p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <RouterLink
           v-for="cat in categories"
@@ -66,10 +76,17 @@
     <section class="px-6 lg:px-16 py-14 bg-gray-50 dark:bg-obsidian">
       <div class="flex items-center justify-between mb-8">
         <div>
-          <h2 class="text-xl font-bold text-obsidian dark:text-white">{{ ui.t('landingFeaturedTitle') }}</h2>
-          <p class="text-sm text-gray-400 dark:text-gray-500 mt-1">{{ ui.t('landingFeaturedSub') }}</p>
+          <h2 class="text-xl font-bold text-obsidian dark:text-white">
+            {{ ui.t('landingFeaturedTitle') }}
+          </h2>
+          <p class="text-sm text-gray-400 dark:text-gray-500 mt-1">
+            {{ ui.t('landingFeaturedSub') }}
+          </p>
         </div>
-        <RouterLink to="/shop" class="text-sm font-semibold text-brand hover:underline hidden sm:block">
+        <RouterLink
+          to="/shop"
+          class="text-sm font-semibold text-brand hover:underline hidden sm:block"
+        >
           {{ ui.t('landingViewAll') }} →
         </RouterLink>
       </div>
@@ -82,14 +99,25 @@
           class="group bg-white dark:bg-obsidian-2 rounded-2xl border border-gray-100 dark:border-obsidian-3 overflow-hidden hover:border-brand hover:shadow-lg hover:shadow-brand/10 transition-all"
         >
           <div class="relative h-44 bg-gray-100 dark:bg-obsidian-3 overflow-hidden">
-            <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span v-if="product.discountPercentage > 0" class="absolute top-2 right-2 bg-brand text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+            <img
+              :src="product.image"
+              :alt="product.name"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            >
+            <span
+              v-if="product.discountPercentage > 0"
+              class="absolute top-2 right-2 bg-brand text-white text-[10px] font-bold px-2 py-0.5 rounded-full"
+            >
               -{{ product.discountPercentage }}%
             </span>
           </div>
           <div class="p-4">
-            <p class="text-[10px] font-bold text-brand uppercase tracking-widest mb-1">{{ product.brand }}</p>
-            <p class="text-sm font-semibold text-obsidian dark:text-white line-clamp-2 leading-tight mb-2">{{ product.name }}</p>
+            <p class="text-[10px] font-bold text-brand uppercase tracking-widest mb-1">
+              {{ product.brand }}
+            </p>
+            <p class="text-sm font-semibold text-obsidian dark:text-white line-clamp-2 leading-tight mb-2">
+              {{ product.name }}
+            </p>
             <div class="flex items-center justify-between">
               <span class="text-base font-extrabold text-brand">{{ ui.format(effectivePrice(product)) }}</span>
               <div class="flex items-center gap-0.5">
@@ -102,14 +130,23 @@
       </div>
 
       <div class="mt-6 text-center sm:hidden">
-        <RouterLink to="/shop" class="text-sm font-semibold text-brand hover:underline">{{ ui.t('landingViewAll') }} →</RouterLink>
+        <RouterLink
+          to="/shop"
+          class="text-sm font-semibold text-brand hover:underline"
+        >
+          {{ ui.t('landingViewAll') }} →
+        </RouterLink>
       </div>
     </section>
 
     <!-- Features / USPs -->
     <section class="px-6 lg:px-16 py-14 bg-white dark:bg-obsidian-2">
-      <h2 class="text-xl font-bold text-obsidian dark:text-white mb-2 text-center">{{ ui.t('landingWhyTitle') }}</h2>
-      <p class="text-sm text-gray-400 dark:text-gray-500 mb-10 text-center">{{ ui.t('landingWhySub') }}</p>
+      <h2 class="text-xl font-bold text-obsidian dark:text-white mb-2 text-center">
+        {{ ui.t('landingWhyTitle') }}
+      </h2>
+      <p class="text-sm text-gray-400 dark:text-gray-500 mb-10 text-center">
+        {{ ui.t('landingWhySub') }}
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
           v-for="feature in features"
@@ -117,8 +154,12 @@
           class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl bg-gray-50 dark:bg-obsidian-3 border border-gray-100 dark:border-obsidian-3"
         >
           <span class="text-3xl">{{ feature.icon }}</span>
-          <p class="font-bold text-obsidian dark:text-white text-sm">{{ feature.title }}</p>
-          <p class="text-xs text-gray-400 dark:text-gray-500 leading-relaxed">{{ feature.desc }}</p>
+          <p class="font-bold text-obsidian dark:text-white text-sm">
+            {{ feature.title }}
+          </p>
+          <p class="text-xs text-gray-400 dark:text-gray-500 leading-relaxed">
+            {{ feature.desc }}
+          </p>
         </div>
       </div>
     </section>
@@ -126,8 +167,12 @@
     <!-- CTA Banner -->
     <section class="px-6 lg:px-16 py-16 bg-brand">
       <div class="max-w-2xl mx-auto text-center flex flex-col items-center gap-5">
-        <h2 class="text-2xl lg:text-3xl font-extrabold text-white leading-tight">{{ ui.t('landingBannerTitle') }}</h2>
-        <p class="text-sm text-white/80 leading-relaxed">{{ ui.t('landingBannerSub') }}</p>
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+          {{ ui.t('landingBannerTitle') }}
+        </h2>
+        <p class="text-sm text-white/80 leading-relaxed">
+          {{ ui.t('landingBannerSub') }}
+        </p>
         <RouterLink
           to="/shop"
           class="px-8 py-3 bg-white text-brand font-bold rounded-xl text-sm hover:bg-gray-50 transition-colors shadow-lg"
@@ -136,7 +181,6 @@
         </RouterLink>
       </div>
     </section>
-
   </div>
 </template>
 
