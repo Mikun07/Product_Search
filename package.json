@@ -19,7 +19,7 @@
     "vue-toastification": "^2.0.0-rc.5"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint --fix --max-warnings 0"
+    "src/**/*.{js,vue}": "eslint --fix --max-warnings 0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",

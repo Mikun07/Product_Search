@@ -1,6 +1,6 @@
 describe("Product Search", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:5173/");
+    cy.visit("/");
   });
 
   it("should load the home page and display product cards", () => {
