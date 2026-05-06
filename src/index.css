@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Bai+Jamjuree:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,16 +14,16 @@
   *::after {
     box-sizing: border-box;
   }
-  
+
   * {
     margin: 0;
   }
-  
+
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
-  
+
   img,
   picture,
   video,
@@ -33,14 +32,14 @@
     display: block;
     max-width: 100%;
   }
-  
+
   input,
   button,
   textarea,
   select {
     font: inherit;
   }
-  
+
   p,
   h1,
   h2,
@@ -55,22 +54,21 @@
 .custom__scrollbar::-webkit-scrollbar {
   width: 5px;
   height: 5px;
-  visibility: hidden;
-}
-
-.custom__scrollbar:not(.Hidden)::-webkit-scrollbar {
-  visibility: visible;
 }
 
 .custom__scrollbar::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #e5e7eb;
+}
+
+.dark .custom__scrollbar::-webkit-scrollbar-track {
+  background: #23242f;
 }
 
 .custom__scrollbar::-webkit-scrollbar-thumb {
-  background: #E1E1E1;
+  background: #2079c9;
   border-radius: 24px;
 }
 
 .custom__scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #E1E1E1;
+  background: #1a63a8;
 }
